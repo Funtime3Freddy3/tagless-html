@@ -1,0 +1,129 @@
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const title = document.createElement('title');
+        title.textContent = 'A Javascript Web Page';
+        document.head.appendChild(title);
+        const link = document.createElement('link');
+        link.rel = 'icon';
+        link.href = 'https://2ality.com/2011/10/logo-js/js.jpg';
+        document.head.appendChild(link);
+        const bootstrapCSS = document.createElement('link');
+        bootstrapCSS.rel = 'stylesheet';
+        bootstrapCSS.href = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css';
+        document.head.appendChild(bootstrapCSS);
+        const bootstrapJS1 = document.createElement('script');
+        bootstrapJS1.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js';
+        document.head.appendChild(bootstrapJS1);
+        const bootstrapJS2 = document.createElement('script');
+        bootstrapJS2.src = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js';
+        document.head.appendChild(bootstrapJS2);
+        const bootstrapJS3 = document.createElement('script');
+        bootstrapJS3.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js';
+        document.head.appendChild(bootstrapJS3);
+        const theme = document.createElement('style');
+        theme.textContent = `
+            body {
+                margin-top: 0px;
+                padding: 0 0 50px 0;
+            }
+            .title {
+                text-align: center;
+            }
+            .header {
+                height: 100px;
+                background: #F9DC3D;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+            }
+            .header h1 {
+                margin: 0;
+            }
+            .button {
+                width: 100%;
+                background-color: #F9DC3D;
+                border: none;
+                border-radius: 25px;
+                color: black;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer; 
+                transition: 0.5s;
+            }
+            .button:hover {
+                width: 100%;
+                background-color: red;
+                border: none;
+                border-radius: 25px;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            .footer {
+                height: 50px;
+                width: 100%;
+                background: #F9DC3D;
+                color: black;
+                display: flex;
+                position: fixed;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                bottom: 0;
+                left: 0;
+            }
+            .footer h1 {
+                margin: 0;
+            }
+        `;
+        document.head.appendChild(theme);
+        const header = document.createElement('div');
+        header.className = 'header';
+        document.body.appendChild(header);
+        const headerTitle = document.createElement('h1');
+        headerTitle.textContent = 'A Javascript Web Page';
+        headerTitle.className = 'title';
+        header.appendChild(headerTitle);
+        const container = document.createElement('div');
+        container.className = 'container';
+        document.body.appendChild(container);
+        const element1 = document.createElement('h3');
+        element1.textContent = `Welcome to a web page made entirely of just javascript and the challanges in it's journey!`;
+        container.appendChild(element1);
+        const element2 = document.createElement('h3');
+        element2.textContent = `My name is Funtime3Freddy3! The challange idea owner of making a web page entirely from a Javascript script tag and nothing more.`;
+        container.appendChild(element2);
+        const element3 = document.createElement('h3');
+        element3.textContent = `If you've ever wondered if it's possible to create a tagless web page, well... now you know it's possible!`;
+        container.appendChild(element3);
+        const element4 = document.createElement('h3');
+        element4.textContent = `Follow my socials down below:`;
+        container.appendChild(element4);
+        element5 = document.createElement('button');
+        element5.className = 'button';
+        element5.textContent = `Click`;
+        element5.onclick = () => {window.open('https://f3f3.xyz/socials', '_blank')};
+        container.appendChild(element5);
+        const footer = document.createElement('div');
+        footer.className = 'footer';
+        document.body.appendChild(footer);
+        const element6 = document.createElement('h3');
+        element6.className = 'title';
+        element6.textContent = `©Funtime3Freddy3`;
+        footer.appendChild(element6);
+    });
+</script>
