@@ -10,6 +10,7 @@ Feel free to use, learn from, and expand it. Great for JS learners, challenge se
 - No `<body>`, `<div>`, or other HTML tags needed in the source
 - Dynamic head construction (title, favicon, styles, bootstrap)
 - Footer, header, button, and multiple paragraphs all via JS
+
 ## License
 MIT License
 
